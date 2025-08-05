@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FussionnArt</title>
+  <!-- Favicon -->
   <link rel="icon" href="../assets/finterest logo.jpg">
+  <!-- Import file CSS eksternal -->
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/resposive.css">
 </head>
 
+<!-- setiap html punya struktur yang sama, cuma beda konten -->
 <body>
+  <!-- Bagian Header -->
   <header class="main-header">
     <div class="head">
       <button class="hamburger" id="hamburger">&#9776;</button>
@@ -18,15 +22,14 @@
         <img src="../assets/finterest logo.jpg" alt="icon" />
         <h1>Fussionn<span><i class="art">Art</i></span></h1>
       </a>
+      <!-- Navigasi -->
       <nav class="navbar">
         <div class="nav-blur-overlay">
           <ul class="nav-menu" id="navMenu">
             <li class="hover"><a class="active" href="home.html">Home</a></li>
             <li class="hover"><a href="explore.html">Explore</a></li>
-            <!-- <li class="hover"><a href="mesagge.html">Message</a></li> -->
             <li class="hover"><a href="about.html">About</a></li>
             <li class="hover"><a href="profile.html">Profile</a></li>
-            <!-- <li class="hover"><a id="theme-toggle" href="#">Mode</a></li> -->
             <li class="hover dropdown-menu" id="theme-menu">
               <a href="#" data-key="nav-mode">Mode</a>
               <ul class="dropdown-content">
@@ -41,13 +44,17 @@
       </nav>
     </div>
   </header>
+  <!-- Konten utama -->
   <main>
+    <!-- Section: Anime -->
     <section class="size">
       <div class="character-header">
         <h1 id="anime-title">Memuat Galeri...</h1>
 
+        <!-- Filter Karakter -->
         <div id="character-filter-buttons" class="filter-button-group"></div>
 
+        <!-- Filter Ukuran Gambar -->
         <div id="orientation-filter-buttons" class="filter-button-group">
           <button class="filter-btn active" data-filter="all">Semua Gambar</button>
           <button class="filter-btn" data-filter="potrait">Potrait</button>
@@ -59,15 +66,17 @@
           <p class="fas fa-arrow-left"></p> Kembali ke Daftar Anime
         </a>
       </div>
-
+      <!-- Tampungan untuk menampilkan gambar per karakter -->
       <div class="character-grid" id="character-grid"></div>
 
+      <!-- Pagination -->
       <div id="pagination-container">
         <button id="prev-button"><</button>
             <span id="page-info"></span>
             <button id="next-button">></button>
       </div>
 
+      <!-- Modal untuk menampilkan gambar -->
       <div id="image-modal" class="modal">
         <span class="close">X</span>
         <div class="modal-actions">
@@ -80,6 +89,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="xiaomi-foot">
     <div class="foot-contain">
       <div class="foot">
@@ -107,6 +117,7 @@
       </div>
     </div>
   </footer>
+  <!-- JavaScript eksternal -->
   <script src="../js/script.js"></script>
   <script src="../js/anime.js"></script>
   <script src="../js/modal.js"></script>

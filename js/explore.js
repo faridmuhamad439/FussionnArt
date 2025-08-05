@@ -1,5 +1,3 @@
-// explore.js (versi yang telah disesuaikan)
-
 document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode di dalam fungsi ini setelah seluruh dokumen HTML selesai dimuat.
 
     let allImageData = []; // Variabel untuk menyimpan semua data gambar yang diekstrak dari API.

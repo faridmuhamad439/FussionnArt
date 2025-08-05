@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FussionnArt</title>
+
+    <!-- Favicon -->
     <link rel="icon" href="../assets/finterest logo.jpg">
+
+    <!-- Import file CSS eksternal -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/resposive.css">
 </head>
 
+<!-- setiap html punya struktur yang sama, cuma beda konten -->
 <body>
+    <!-- Bagian Header -->
     <header class="main-header">
         <div class="head">
             <button class="hamburger" id="hamburger">&#9776;</button>
@@ -18,15 +23,14 @@
                 <img src="../assets/finterest logo.jpg" alt="icon" />
                 <h1>Fussionn<span><i class="art">Art</i></span></h1>
             </a>
+            <!-- Navigasi -->
             <nav class="navbar">
                 <div class="nav-blur-overlay">
                     <ul class="nav-menu" id="navMenu">
                         <li class="hover"><a href="home.html">Home</a></li>
                         <li class="hover"><a href="explore.html">Explore</a></li>
-                        <!-- <li class="hover"><a href="mesagge.html">Message</a></li> -->
                         <li class="hover"><a class="active" href="about.html">About</a></li>
                         <li class="hover"><a href="profile.html">Profile</a></li>
-                        <!-- <li class="hover"><a id="theme-toggle" href="#">Mode</a></li> -->
                         <li class="hover dropdown-menu" id="theme-menu">
                             <a href="#" data-key="nav-mode">Mode</a>
                             <ul class="dropdown-content">
@@ -41,8 +45,9 @@
             </nav>
         </div>
     </header>
-
+    <!-- Konten utama -->
     <main class="page-wrapper-with-aside">
+        <!-- Section: about -->
         <section class="about-container">
             <article>
                 <div class="about-hero">
@@ -91,7 +96,7 @@
                     </ul>
                 </div>
                 <div class="about-div creator-div">
-                    <img src="/assets/finterest logo.jpg" alt="Foto Profil Kreator">
+                    <img src="../assets/finterest logo.jpg" alt="Foto Profil Kreator">
                     <div class="creator-info">
                         <h2>Dari Sang Kreator</h2>
                         <p class="creator-quote">
@@ -104,7 +109,6 @@
                         <p class="creator-name">- Farid Muhamad, Kreator FussionnArt</p>
                     </div>
                 </div>
-
                 <div class="about-div">
                     <h2>Bergabunglah dengan Kami</h2>
                     <p>
@@ -117,7 +121,7 @@
                 </div>
             </article>
         </section>
-
+        <!-- Aside about -->
         <aside class="about-aside">
             <div class="aside-box">
                 <h3>Sekilas Info</h3>
@@ -125,7 +129,6 @@
                     <li><strong>Judul Anime:</strong><span>11+</span></li>
                     <li><strong>Total Gambar:</strong><span>1000+</span></li>
                     <li><strong>Tipe Lisensi:</strong><span>Koleksi Pribadi</span></li>
-                    <!-- <li><strong>Dibangun dengan:</strong><span>Passion ❤️</span></li> -->
                 </ul>
             </div>
 
@@ -135,7 +138,6 @@
                     <li><strong>Frontend:</strong><span>HTML5, CSS3</span></li>
                     <li><strong>Interaktivitas:</strong><span>JavaScript (ES6+)</span></li>
                     <li><strong>Sumber Data:</strong><span>External API</span></li>
-                    <!-- <li><strong>Prinsip:</strong><span>Desain Responsif</span></li> -->
                 </ul>
             </div>
 
@@ -153,6 +155,7 @@
         </aside>
     </main>
 
+    <!-- Footer -->
     <footer class="xiaomi-foot">
         <div class="foot-contain">
             <div class="foot">
@@ -179,7 +182,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- JavaScript eksternal -->
     <script src="../js/script.js"></script>
 </body>
 

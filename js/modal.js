@@ -1,8 +1,3 @@
-// ===============================================
-//           KODE BERSAMA UNTUK MODAL
-//         (Disimpan sebagai modal.js)
-// ===============================================
-
 // Variabel ini akan diakses oleh skrip lain (explore.js & anime.js)
 let currentModalImageUrl = null; // Menyimpan URL gambar yang sedang ditampilkan di modal.
 

@@ -1,42 +1,63 @@
 /* ==================================== */
-/* 1. DASAR, RESET & THEME VARIABLES    */
+/*  THEME VARIABLES    */
 /* ==================================== */
 
+/* Mendefinisikan variabel CSS global untuk tema gelap. */
 :root {
     /* --- DARK THEME (Palet Modern & Elegan) --- */
-    --bg-primary: #1A202C; /* Latar belakang utama: Biru-abu-abu sangat gelap, lebih lembut dari hitam pekat */
-    --bg-secondary: #2D3748; /* Latar belakang sekunder: Sedikit lebih terang untuk kontras */
-    --bg-header: rgba(26, 32, 44, 0.85); /* Header dengan transparansi & blur */
+    --bg-primary: #1A202C;
+    /* Latar belakang utama: Biru-abu-abu sangat gelap, lebih lembut dari hitam pekat */
+    --bg-secondary: #2D3748;
+    /* Latar belakang sekunder: Sedikit lebih terang untuk kontras */
+    --bg-header: rgba(26, 32, 44, 0.85);
+    /* Header dengan transparansi & blur */
     --bg-mobile-nav: rgba(26, 32, 44, 0.98);
-    --text-primary: #E2E8F0; /* Teks utama: Putih keabu-abuan, tidak terlalu tajam */
-    --text-secondary: #A0AEC0; /* Teks sekunder: Abu-abu kebiruan untuk harmoni */
+    --text-primary: #E2E8F0;
+    /* Teks utama: Putih keabu-abuan, tidak terlalu tajam */
+    --text-secondary: #A0AEC0;
+    /* Teks sekunder: Abu-abu kebiruan untuk harmoni */
     --text-hero: #ffffff;
-    --accent-color: #356999; /* Warna aksen: Biru cerah yang modern dan menarik */
-    --border-color: #4A5568; /* Warna border: Cukup terlihat tanpa terlalu mencolok */
-    --cta-bg: transparent; /* Tombol CTA transparan dengan border */
+    --accent-color: #356999;
+    /* Warna aksen: Biru cerah yang modern dan menarik */
+    --border-color: #4A5568;
+    /* Warna border: Cukup terlihat tanpa terlalu mencolok */
+    --cta-bg: transparent;
+    /* Tombol CTA transparan dengan border */
     --cta-text: var(--accent-color);
-    --cta-bg-hover: var(--accent-color); /* Latar CTA saat hover */
-    --cta-text-hover: #1A202C; /* Teks CTA saat hover */
-    --logout-hover-bg: #E53E3E; /* Merah yang lebih lembut untuk logout */
+    --cta-bg-hover: var(--accent-color);
+    /* Latar CTA saat hover */
+    --cta-text-hover: #1A202C;
+    /* Teks CTA saat hover */
+    --logout-hover-bg: #E53E3E;
+    /* Merah yang lebih lembut untuk logout */
     --nav-hover-bg: var(--accent-color);
     --shadow-color: rgba(0, 0, 0, 0.5);
     --hero-overlay: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.8));
 }
 
+/* Mendefinisikan variabel CSS untuk tema terang, yang akan diterapkan ketika body memiliki class "light-theme". */
 body.light-theme {
     /* --- LIGHT THEME (Palet Modern & Elegan) --- */
-    --bg-primary: #F7FAFC; /* Latar belakang utama: Putih sejuk, tidak silau */
-    --bg-secondary: #FFFFFF; /* Latar belakang sekunder: Putih bersih untuk kartu/konten */
-    --bg-header: rgba(247, 250, 252, 0.85); /* Header dengan transparansi & blur */
+    --bg-primary: #F7FAFC;
+    /* Latar belakang utama: Putih sejuk, tidak silau */
+    --bg-secondary: #FFFFFF;
+    /* Latar belakang sekunder: Putih bersih untuk kartu/konten */
+    --bg-header: rgba(247, 250, 252, 0.85);
+    /* Header dengan transparansi & blur */
     --bg-mobile-nav: rgba(247, 250, 252, 0.98);
-    --text-primary: #1A202C; /* Teks utama: Abu-abu gelap, kontras tinggi dan mudah dibaca */
-    --text-secondary: #4A5568; /* Teks sekunder: Abu-abu yang lebih lembut */
+    --text-primary: #1A202C;
+    /* Teks utama: Abu-abu gelap, kontras tinggi dan mudah dibaca */
+    --text-secondary: #4A5568;
+    /* Teks sekunder: Abu-abu yang lebih lembut */
     --text-hero: #1A202C;
-    --accent-color: #356999; /* Warna aksen: Biru yang sedikit lebih gelap untuk visibilitas di latar terang */
-    --border-color: #E2E8F0; /* Warna border: Abu-abu sangat terang */
+    --accent-color: #356999;
+    /* Warna aksen: Biru yang sedikit lebih gelap untuk visibilitas di latar terang */
+    --border-color: #E2E8F0;
+    /* Warna border: Abu-abu sangat terang */
     --cta-bg: var(--accent-color);
     --cta-text: #ffffff;
-    --cta-bg-hover: #356999; /* Versi lebih gelap dari aksen untuk hover */
+    --cta-bg-hover: #356999;
+    /* Versi lebih gelap dari aksen untuk hover */
     --cta-text-hover: #ffffff;
     --logout-hover-bg: #E53E3E;
     --nav-hover-bg: var(--accent-color);
@@ -44,39 +65,40 @@ body.light-theme {
     --hero-overlay: linear-gradient(rgba(247, 250, 252, 0.7), rgba(247, 250, 252, 0.7));
 }
 
+/* Mengatur ulang (reset) gaya untuk semua elemen. */
 * {
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: comic sans ms;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
     transition: background-color 0.3s, color 0.3s;
-    /* Smooth transition for theme change */
 }
 
+/* Gaya dasar untuk elemen body. */
 body {
     background: var(--bg-primary);
     color: var(--text-primary);
 }
 
+/* Gaya dasar untuk semua link. */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-
 /* ==================================== */
-/* 2. HEADER & NAVIGASI                 */
+/*    HEADER & NAVIGASI                 */
 /* ==================================== */
 
-
+/* Gaya untuk kontainer utama header. */
 .main-header {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+/* Gaya untuk konten di dalam header. */
 .head {
     left: 0;
     width: 100%;
@@ -91,65 +113,75 @@ a {
     border-bottom: 0.1vh solid var(--border-color);
 }
 
+/* Gaya untuk kontainer logo. */
 .logo {
     display: flex;
     align-items: center;
 }
 
+/* Gaya untuk gambar logo. */
 .logo img {
-    width: 4vw;
-    /* height: 5vh; */
+    width: 3.8vw;
     border-radius: 50%;
     margin-right: 2vw;
 }
 
+/* Gaya untuk judul logo. */
 .logo h1 {
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-weight: bold;
 }
 
+/* Menimpa warna judul logo saat tema terang aktif. */
 body.light-theme .logo h1 {
     color: var(--text-primary);
 }
 
+/* Gaya khusus untuk ikon seni di logo. */
 .logo span i.art {
-    /* font-family: 'Segoe Script', 'Brush Script MT', cursive; */
     color: var(--accent-color);
 }
 
+/* Gaya untuk menu navigasi. */
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 0.5vw;
 }
 
+/* Gaya untuk link di dalam menu navigasi. */
 .nav-menu li a {
     position: relative;
-    padding: 1vh 1.5vw;
+    padding: 1.7vh 1.5vw;
     border-radius: 0.5vw;
     transition: background-color 0.3s;
 }
 
+/* Gaya link logout saat di-hover dan saat memiliki class 'active'. */
 .logout a:hover,
 .logout a.active {
     background-color: var(--logout-hover-bg);
 }
 
+/* Gaya link saat di-hover dan saat memiliki class 'active'. */
 .hover a:hover,
 .hover a.active {
     background-color: var(--nav-hover-bg);
 }
 
+/* Mendefinisikan animasi berkedip. */
 @keyframes blink-effect {
     50% {
         background-color: #72b2f6;
     }
 }
 
+/* Menerapkan animasi pada link yang aktif. */
 .hover a.active {
     animation: blink-effect 1s infinite;
 }
 
+/* Gaya untuk tombol hamburger (untuk tampilan mobile). */
 .hamburger {
     display: none;
     font-size: 5vw;
@@ -158,10 +190,13 @@ body.light-theme .logo h1 {
     color: var(--text-primary);
     cursor: pointer;
 }
-/* Dropdown Menu Styles */
+
+/* Gaya untuk item menu yang memiliki dropdown. */
 .dropdown-menu {
     position: relative;
 }
+
+/* Gaya untuk konten di dalam dropdown. */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -172,31 +207,40 @@ body.light-theme .logo h1 {
     list-style: none;
     padding: 0.5vw;
     border-radius: 1vw;
-    /* min-width: 120px; */
     z-index: 10;
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Menampilkan konten dropdown saat elemen induk di-hover. */
 .dropdown-menu:hover .dropdown-content {
     display: flex;
 }
+
+/* Gaya untuk link di dalam konten dropdown. */
 .dropdown-content li a {
-    padding: 1vw 3vw;
+    padding: 0.5vw 0.5vw;
     display: block;
     text-align: center;
     border-radius: 1vvw;
 }
+
+/* Gaya link dropdown saat di-hover. */
 .dropdown-content li a:hover {
     background-color: var(--accent-color);
 }
-.div-alone ul{
+
+/* Gaya untuk daftar di dalam elemen `div-alone`. */
+.div-alone ul {
     list-style: none;
 }
 
 
 /* ==================================== */
-/* 3. HERO SECTION (BAGIAN UTAMA)       */
+/*  HERO SECTION */
 /* ==================================== */
+
+/* Gaya untuk section hero. */
 .hero-section {
     display: flex;
     align-items: center;
@@ -210,18 +254,21 @@ body.light-theme .logo h1 {
     color: var(--text-hero);
 }
 
+/* Gaya untuk judul di section hero. */
 .hero-content h1 {
     font-size: 4vw;
     color: var(--accent-color);
     margin-bottom: 2%;
 }
 
+/* Gaya untuk paragraf di section hero. */
 .hero-content p {
     font-size: 2vw;
     color: var(--text-secondary);
     margin-bottom: 2%;
 }
 
+/* Gaya untuk tombol Call-to-Action. */
 .cta-button {
     background-color: var(--cta-bg);
     color: var(--cta-text);
@@ -234,6 +281,7 @@ body.light-theme .logo h1 {
     border: 0.1vh solid var(--accent-color);
 }
 
+/* Gaya tombol CTA saat di-hover. */
 .cta-button:hover {
     background-color: var(--cta-bg-hover);
     color: var(--cta-text-hover);
@@ -241,8 +289,10 @@ body.light-theme .logo h1 {
 }
 
 /* ==================================== */
-/* 4. SECTION KONTEN UMUM               */
+/* SECTION KONTEN                */
 /* ==================================== */
+
+/* Gaya untuk section konten umum. */
 .content-section {
     padding: 5vh 5%;
     max-width: 90vw;
@@ -250,44 +300,49 @@ body.light-theme .logo h1 {
     text-align: center;
 }
 
+/* Gaya untuk judul section. */
 .section-title {
     font-size: 4vw;
     margin-bottom: 5vh;
     color: var(--accent-color);
 }
 
-/* Fitur Unggulan */
+/* Gaya untuk grid fitur. */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
     gap: 3vw;
 }
 
+/* Gaya untuk setiap kartu fitur. */
 .feature-card {
     background-color: var(--bg-secondary);
-    padding: 3vh 3vw;
+    padding: 2vh 3vw;
     border-radius: 1.5vw;
     border-top: 0.4vh solid var(--accent-color);
 }
 
+/* Gaya untuk judul kartu fitur. */
 .feature-card h3 {
     font-size: 3vw;
     margin-bottom: 2vh;
     color: var(--accent-color);
 }
 
+/* Gaya untuk paragraf kartu fitur. */
 .feature-card p {
     color: var(--text-secondary);
     line-height: 1.6;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
-/* Pratinjau Galeri */
+/* Gaya untuk section pratinjau galeri. */
 .gallery-preview-section {
     background-color: var(--bg-secondary);
     padding: 5vh 0;
 }
 
+/* Gaya untuk grid pratinjau gambar. */
 .image-showcase {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
@@ -295,6 +350,7 @@ body.light-theme .logo h1 {
     margin-bottom: 5vh;
 }
 
+/* Gaya untuk gambar di pratinjau. */
 .showcase-item img {
     width: 100%;
     height: 30vh;
@@ -303,14 +359,17 @@ body.light-theme .logo h1 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Efek saat gambar di-hover. */
 .showcase-item img:hover {
     transform: scale(1.05);
     box-shadow: 0 1vh 2vh var(--shadow-color);
 }
 
 /* ==================================== */
-/* 5. FOOTER                            */
+/* 5. FOOTER                            */
 /* ==================================== */
+
+/* Gaya untuk footer. */
 .xiaomi-foot {
     margin-top: 10vh;
     background-color: var(--bg-secondary);
@@ -318,6 +377,7 @@ body.light-theme .logo h1 {
     border-top: 0.1vh solid var(--border-color);
 }
 
+/* Gaya untuk kontainer di dalam footer. */
 .foot-contain {
     max-width: 90vw;
     margin: 0 auto;
@@ -327,45 +387,52 @@ body.light-theme .logo h1 {
     gap: 3vw;
 }
 
+/* Gaya untuk setiap kolom di footer. */
 .foot {
     flex: 1;
     min-width: 25vw;
 }
 
+/* Gaya untuk judul di footer. */
 .foot h1,
-h3, h2{
+h3,
+h2 {
     font-size: 2vw;
     font-weight: bold;
 }
 
+/* Gaya untuk teks "art". */
 .art {
     font-family: 'Segoe Script', 'Brush Script MT', cursive;
     color: var(--accent-color);
 }
 
+/* Gaya untuk paragraf di footer. */
 .foot p {
     font-size: 1vw;
     line-height: 1.6;
     color: var(--text-secondary);
 }
 
+/* Gaya untuk kontainer ikon media sosial. */
 .foot-medsos {
     display: flex;
     align-items: center;
     gap: 2vw;
 }
 
+/* Gaya untuk gambar ikon media sosial. */
 .foot-medsos a img {
     width: 3vw;
     transition: transform 0.2s ease;
 }
 
+/* Efek saat ikon di-hover. */
 .foot-medsos a img:hover {
     transform: scale(1.1);
 }
 
-
-/* Styling untuk Google Icons di navigasi */
+/* Gaya untuk ikon Google. */
 .material-symbols-outlined {
     font-size: 20vw;
     vertical-align: middle;
@@ -374,16 +441,15 @@ h3, h2{
 /* =================================== */
 /* HOME */
 /* =================================== */
-/* Penataan Konten Utama */
+
+/* Gaya untuk kontainer utama halaman Home. */
 .size {
-    /* max-width: 90vw; */
     margin: 4vh auto;
     padding: 0 2%;
     width: 75%;
-
 }
 
-/* --- Bagian Video Slider --- */
+/* Kontainer untuk video slider. */
 .video-wrapper {
     margin-top: 2%;
     position: relative;
@@ -395,6 +461,7 @@ h3, h2{
     box-shadow: 0 1vh 3vh var(--shadow-color);
 }
 
+/* Gaya untuk elemen video. */
 #main-video {
     width: 100%;
     height: 100%;
@@ -402,7 +469,7 @@ h3, h2{
     display: block;
 }
 
-/* Tombol navigasi overlay */
+/* Gaya untuk tombol navigasi video. */
 .nav-btn {
     position: absolute;
     top: 50%;
@@ -419,23 +486,27 @@ h3, h2{
     transition: opacity 0.3s ease;
 }
 
+/* Menampilkan tombol saat kontainer video di-hover. */
 .video-wrapper:hover .nav-btn {
     opacity: 1;
 }
 
+/* Tombol "sebelumnya" di sisi kiri. */
 #prev-video-btn {
     left: 2vw;
 }
 
+/* Tombol "berikutnya" di sisi kanan. */
 #next-video-btn {
     right: 2vw;
 }
 
-* ::-webkit-scrollbar{
+/* Gaya untuk scrollbar (khusus browser berbasis Webkit). */
+* ::-webkit-scrollbar {
     display: none;
 }
 
-/* --- Bagian Galeri Anime --- */
+/* Gaya untuk judul header di halaman explore. */
 .explore-header h1 {
     text-align: center;
     font-size: 4vw;
@@ -443,6 +514,7 @@ h3, h2{
     color: var(--accent-color);
 }
 
+/* Gaya untuk form pencarian. */
 #searchBox,
 #explore-search-form {
     display: flex;
@@ -450,6 +522,7 @@ h3, h2{
     margin-bottom: 5vh;
 }
 
+/* Gaya untuk input pencarian. */
 #search-input,
 #explore-search-input {
     width: 100%;
@@ -463,12 +536,13 @@ h3, h2{
     outline-color: var(--accent-color);
 }
 
+/* Gaya untuk tombol pencarian. */
 #searchBox button,
 #explore-search-form button {
     display: none;
 }
 
-/* gambar */
+/* Gaya untuk grid galeri anime. */
 .anime-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
@@ -476,6 +550,7 @@ h3, h2{
     margin-top: 4vh;
 }
 
+/* Gaya untuk setiap kartu gambar anime. */
 .landscape-card {
     position: relative;
     border-radius: 1.5vw;
@@ -486,11 +561,13 @@ h3, h2{
     cursor: pointer;
 }
 
+/* Efek saat kartu di-hover. */
 .landscape-card:hover {
     transform: translateY(-1.5vh);
     box-shadow: 0 1.5vh 3.5vh rgba(66, 153, 225, 0.4);
 }
 
+/* Gaya untuk gambar di dalam kartu. */
 .landscape-image {
     width: 100%;
     height: 100%;
@@ -499,10 +576,12 @@ h3, h2{
     transition: transform 0.5s ease;
 }
 
+/* Efek saat gambar di-hover. */
 .landscape-card:hover .landscape-image {
     transform: scale(1.05);
 }
 
+/* Gaya untuk overlay di bagian bawah kartu. */
 .card-overlay {
     position: absolute;
     bottom: 0;
@@ -512,6 +591,7 @@ h3, h2{
     padding: 3vh 2vw;
 }
 
+/* Gaya untuk judul di overlay. */
 .card-title {
     font-size: 1.5vw;
     font-weight: bold;
@@ -519,6 +599,7 @@ h3, h2{
     text-shadow: 0 0.2vh 0.4vh rgba(0, 0, 0, 0.7);
 }
 
+/* Mendefinisikan animasi berputar. */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -529,17 +610,17 @@ h3, h2{
     }
 }
 
-
 /* ========================= */
 /* ========= ANIME ========= */
 /* ========================= */
 
+/* Gaya untuk header di halaman anime. */
 .character-header {
     text-align: center;
     margin-bottom: 4vh;
-    /* font-size: 0.1vw; */
 }
 
+/* Gaya untuk tombol "kembali". */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -557,12 +638,14 @@ h3, h2{
     text-decoration: none;
 }
 
+/* Efek saat tombol "kembali" di-hover. */
 .back-button:hover {
     background: var(--cta-bg-hover);
     transform: translateY(-0.5vh);
     box-shadow: 0 0.5vh 1.5vh rgba(66, 153, 225, 0.5)
 }
 
+/* Gaya untuk grid gambar karakter. */
 .character-grid {
     border: 0.5vh solid var(--accent-color);
     background-color: var(--bg-secondary);
@@ -574,6 +657,7 @@ h3, h2{
     grid-auto-flow: dense;
 }
 
+/* Gaya untuk setiap item gambar karakter. */
 .character-item {
     border-radius: 1.5vw;
     overflow: hidden;
@@ -587,12 +671,14 @@ h3, h2{
     align-items: center;
 }
 
+/* Efek saat item di-hover. */
 .character-item:hover {
     transform: scale(1.03);
     box-shadow: 0 0.8vh 2.5vh rgba(66, 153, 225, 0.6);
     z-index: 2;
 }
 
+/* Gaya untuk gambar di dalam item. */
 .character-item img {
     width: 100%;
     height: 100%;
@@ -600,19 +686,22 @@ h3, h2{
     display: block;
 }
 
+/* Gaya khusus untuk item gambar persegi. */
 .character-item.square {
     aspect-ratio: 1/1;
 }
 
+/* Gaya khusus untuk item gambar potret. */
 .character-item.portrait {
-    aspect-ratio: 2/3;
+    aspect-ratio: 9/16;
 }
 
+/* Gaya khusus untuk item gambar lanskap. */
 .character-item.landscape {
     aspect-ratio: 16/9;
-    grid-column: span 2;
 }
 
+/* Gaya untuk pesan "loading". */
 .loading {
     text-align: center;
     padding: 7vh 0;
@@ -620,17 +709,20 @@ h3, h2{
     color: var(--accent-color);
 }
 
+/* Gaya untuk ikon loading. */
 .loading i {
     font-size: 4vw;
     margin-bottom: 3vh;
     display: block;
     animation: spin 1.5s linear infinite;
 }
-#anime-title{
+
+/* Gaya untuk judul anime. */
+#anime-title {
     font-size: 4vw;
 }
 
-/* --- Tombol Filter --- */
+/* Gaya untuk grup tombol filter. */
 .filter-button-group {
     width: 100%;
     margin-bottom: 2vh;
@@ -644,11 +736,13 @@ h3, h2{
     justify-items: center;
 }
 
+/* Gaya untuk grup tombol filter terakhir. */
 .filter-button-group:last-of-type {
     border-bottom: none;
     margin-bottom: 0;
 }
 
+/* Gaya untuk tombol filter. */
 .filter-btn {
     padding: 1vh 2vw;
     border: 0.2vh solid var(--border-color);
@@ -662,6 +756,7 @@ h3, h2{
     position: relative;
 }
 
+/* Gaya khusus untuk tombol filter karakter. */
 .char-filter-btn {
     width: 5.5vh;
     height: 5.5vh;
@@ -672,6 +767,7 @@ h3, h2{
     background-color: var(--bg-secondary);
 }
 
+/* Gaya untuk gambar di dalam tombol filter karakter. */
 .char-filter-btn img {
     width: 100%;
     height: 100%;
@@ -679,27 +775,32 @@ h3, h2{
     transition: transform 0.3s ease;
 }
 
+/* Efek saat tombol filter di-hover. */
 .filter-btn:hover {
     border-color: var(--accent-color);
     color: var(--text-primary);
 }
 
+/* Efek saat gambar di tombol filter karakter di-hover. */
 .char-filter-btn:hover img {
     transform: scale(1.1);
 }
 
+/* Gaya untuk tombol filter yang aktif. */
 .filter-btn.active {
     background-color: var(--accent-color);
     color: white;
     border-color: var(--accent-color);
 }
 
+/* Gaya khusus untuk tombol filter karakter yang aktif. */
 .char-filter-btn.active {
     border: 0.3vh solid var(--accent-color);
     padding: 0.2vh;
     background-color: transparent;
 }
 
+/* Gaya untuk tooltip yang muncul di tombol filter karakter. */
 .char-filter-btn::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -718,11 +819,13 @@ h3, h2{
     transition: opacity 0.2s ease-in-out;
 }
 
+/* Menampilkan tooltip saat tombol di-hover. */
 .char-filter-btn:hover::after {
     opacity: 1;
     visibility: visible;
 }
 
+/* Gaya untuk tombol tutup modal. */
 .close {
     position: absolute;
     top: 3vh;
@@ -733,6 +836,7 @@ h3, h2{
     padding: 0 1%;
 }
 
+/* Efek saat tombol tutup modal di-hover. */
 .close:hover {
     font-weight: bold;
     background-color: rgb(255, 44, 44);
@@ -742,13 +846,12 @@ h3, h2{
     transition: all 0.3s ease-in-out;
 }
 
-/* ======================================== */
-/* explore */
-/* ======================================== */
+/* Gaya untuk header di halaman explore. */
 .explore-header {
     text-align: center;
 }
 
+/* Gaya untuk info gambar di halaman explore. */
 .item-info {
     position: absolute;
     bottom: 0;
@@ -761,15 +864,18 @@ h3, h2{
     pointer-events: none;
 }
 
+/* Gaya untuk nama karakter di info gambar. */
 .item-info .info-char {
     font-weight: bold;
 }
 
+/* Gaya untuk nama anime di info gambar. */
 .item-info .info-anime {
     font-size: 1vw;
     opacity: 0.9;
 }
 
+/* Gaya untuk kontainer paginasi. */
 .pagination-container {
     display: none;
     justify-content: center;
@@ -778,6 +884,7 @@ h3, h2{
     gap: 1.5vw;
 }
 
+/* Gaya untuk tombol paginasi. */
 .pagination-btn {
     padding: 1vh 2vw;
     border: 0.1vh solid var(--border-color);
@@ -788,17 +895,19 @@ h3, h2{
     font-weight: 600;
 }
 
+/* Gaya untuk tombol paginasi yang dinonaktifkan. */
 .pagination-btn:disabled {
     cursor: not-allowed;
     opacity: 0.5;
 }
 
+/* Gaya untuk info halaman. */
 #page-info {
     font-weight: 600;
     color: var(--text-secondary);
 }
 
-/* Modal */
+/* Gaya untuk modal (kotak dialog). */
 .modal {
     display: none;
     position: fixed;
@@ -813,22 +922,23 @@ h3, h2{
     justify-content: center;
 }
 
+/* Gaya untuk gambar di dalam modal. */
 .modal-content {
     margin: auto;
     display: block;
     max-width: 80%;
     max-height: 80%;
 }
-   .button:hover {
-        /* background-color: #e0e0e0; Warna latar sedikit lebih gelap */
-        transform: translateY(-2px); /* Efek sedikit terangkat */
-        transform: translateY(2px); /* Efek sedikit terangkat */
-        transform: scale(0.9);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bayangan untuk memperkuat efek terangkat */
-    }
 
+/* Efek saat tombol di-hover. */
+.button:hover {
+    transform: translateY(-2px);
+    transform: translateY(2px);
+    transform: scale(0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-
+/* Gaya untuk kontainer tombol aksi di dalam modal. */
 .modal-actions {
     position: absolute;
     bottom: 5vh;
@@ -838,6 +948,7 @@ h3, h2{
     gap: 1.5vw;
 }
 
+/* Gaya untuk tombol di dalam modal. */
 .modal .button {
     background: var(--accent-color);
     color: white;
@@ -850,15 +961,17 @@ h3, h2{
     border: none;
 }
 
-
+/* Gaya khusus untuk tombol "Suka" saat aktif. */
 .modal .button.liked {
     background-color: #e91e63;
 }
 
+/* Gaya khusus untuk tombol "Favorit" saat aktif. */
 .modal .button.favorited {
     background-color: #ffc107;
 }
 
+/* Gaya untuk kontainer paginasi. */
 #pagination-container {
     display: flex;
     justify-content: center;
@@ -867,6 +980,7 @@ h3, h2{
     margin-top: 4vh;
 }
 
+/* Gaya untuk tombol di dalam kontainer paginasi. */
 #pagination-container button {
     background-color: var(--bg-secondary);
     border: 0.1vh solid var(--border-color);
@@ -884,11 +998,13 @@ h3, h2{
     transition: background-color 0.2s, color 0.2s;
 }
 
+/* Efek saat tombol paginasi di-hover. */
 #pagination-container button:hover {
     background-color: var(--accent-color);
     color: #ffffff;
 }
 
+/* Gaya untuk tombol paginasi yang dinonaktifkan. */
 #pagination-container button:disabled {
     background-color: var(--bg-secondary);
     color: var(--text-secondary);
@@ -897,94 +1013,26 @@ h3, h2{
     border-color: var(--border-color);
 }
 
+/* Gaya untuk info halaman. */
 #page-info {
-    font-size: 1.5vw;
     font-weight: bold;
     color: var(--text-secondary);
 }
 
-
-/* ================================================ */
-/* MESSAGE */
-/* ================================================ */
-#sec {
-    background-size: cover;
-    background-position: center;
-    padding: 6vh 2vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#yaya {
-    background-color: var(--bg-primary);
-    padding: 5vh 5vw;
-    border-radius: 1vw;
-    border: 1vh solid var(--accent-color);
-    width: 100%;
-    /* max-width: 50vw; */
-    width: 75%;
-    box-shadow: 0 0.4vh 2vh rgba(66, 153, 225, 0.5);
-}
-
-#yaya label {
-    display: block;
-    margin-bottom: 1vh;
-    font-weight: bold;
-    color: var(--accent-color);
-}
-
-#yaya input,
-#yaya textarea {
-    width: 100%;
-    padding: 1vh 1vw;
-    margin-bottom: 3vh;
-    border: 0.1vh solid var(--border-color);
-    border-radius: 0.5vw;
-    font-size: 2vw;
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
-}
-
-#yaya textarea {
-    resize: vertical;
-}
-
-#yaya button {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 1.5vh 2vw;
-    border: none;
-    border-radius: 0.5vw;
-    font-size: 1.5vw;
-    cursor: pointer;
-    font-weight: bold;
-    float: right;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-#yaya button:hover {
-    background-color: var(--cta-bg-hover);
-    transform: scale(1.05);
-}
-
-/* =============================================== */
-/* Regist */
-/* =============================================== */
+/* Gaya untuk kontainer form login/registrasi. */
 .container {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-secondary);
-    padding: 4vh 4vw;
+    padding: 4vh 6vw;
     border-radius: 1vw;
     border: 0.1vh solid var(--border-color);
     box-shadow: 0 0.4vh 2vh var(--shadow-color);
-    width: 100%;
-    max-width: 40vw;
+    width: 75%;
     margin: auto auto;
 }
 
+/* Gaya untuk judul h2. */
 h2 {
     text-align: center;
     margin-bottom: 3vh;
@@ -992,20 +1040,22 @@ h2 {
     font-size: 2vw;
 }
 
+/* Gaya untuk grup form. */
 .form-group {
     margin-bottom: 2vh;
 }
 
+/* Gaya untuk label form. */
 label {
     display: block;
-    margin-bottom: 1vh;
-    font-size: 1vw;
+    font-size: 1.1vw;
     color: var(--text-secondary);
 }
 
+/* Gaya untuk input form. */
 input {
     width: 100%;
-    padding: 1.5vh;
+    padding: 1vw;
     border: 0.1vh solid var(--border-color);
     border-radius: 0.4vw;
     box-sizing: border-box;
@@ -1013,9 +1063,10 @@ input {
     color: var(--text-primary);
 }
 
+/* Gaya untuk tombol login. */
 .login {
     width: 100%;
-    padding: 1.5vh;
+    padding: 1vw;
     border: none;
     border-radius: 0.4vw;
     background-color: var(--accent-color);
@@ -1026,10 +1077,13 @@ input {
     transition: background-color 0.2s;
 }
 
+/* Efek saat tombol login di-hover. */
 .login:hover {
-    background-color: var(--cta-bg-hover);
+    background-color: var(--text-secondary);
+    transform: scale(0.9);
 }
 
+/* Gaya untuk kontainer tautan beralih form. */
 .switch-form {
     text-align: center;
     margin-top: 3vh;
@@ -1037,6 +1091,7 @@ input {
     color: var(--text-secondary);
 }
 
+/* Gaya untuk tautan di dalam kontainer beralih form. */
 .switch-form a {
     color: var(--accent-color);
     font-weight: bold;
@@ -1044,16 +1099,19 @@ input {
     text-decoration: none;
 }
 
+/* Efek saat tautan di-hover. */
 .switch-form a:hover {
     text-decoration: underline;
+    color: var(--text-secondary);
 }
 
+/* Kelas untuk menyembunyikan elemen. */
 .hidden {
     display: none;
 }
 
+/* Gaya untuk tombol kembali. */
 #back-button {
-    /* position: fixed; */
     margin-top: 1%;
     margin-left: -13vw;
     z-index: 1000;
@@ -1061,7 +1119,6 @@ input {
     backdrop-filter: blur(0.5vw);
     border-radius: 10%;
     width: 4vw;
-    /* height: ; */
     font-size: 3vw;
     color: var(--text-secondary);
     cursor: pointer;
@@ -1072,15 +1129,14 @@ input {
     transition: background-color 0.2s, transform 0.2s;
 }
 
+/* Efek saat tombol kembali di-hover. */
 #back-button:hover {
     background-color: var(--accent-color);
     color: #ffffff;
     transform: scale(1.1);
 }
 
-/* ==================================================== */
-/* ABOUT */
-/* ==================================================== */
+/* Kontainer utama halaman About dengan layout grid. */
 .page-wrapper-with-aside {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -1091,38 +1147,42 @@ input {
     font-size: 1vw;
 }
 
+/* Kontainer utama untuk konten About. */
 .about-container {
     color: var(--text-primary);
     line-height: 1.7;
-    /* font-size: 1vw; */
 }
 
+/* Gaya untuk bagian hero di halaman About. */
 .about-hero {
-    /* font-size: 1vw; */
     text-align: center;
     margin-bottom: 7vh;
     padding-bottom: 4vh;
     border-bottom: 0.1vh solid var(--border-color);
 }
 
+/* Gaya untuk judul hero di halaman About. */
 .about-hero h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     color: var(--accent-color);
     margin-bottom: 2vh;
 }
 
+/* Gaya untuk subjudul hero di halaman About. */
 .about-hero .subtitle {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     color: var(--text-secondary);
     font-style: italic;
 }
 
+/* Gaya untuk setiap divisi konten di halaman About. */
 .about-div {
     margin-bottom: 6vh;
 }
 
+/* Gaya untuk judul h2 di halaman About. */
 .about-div h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--accent-color);
     margin-bottom: 2vh;
     padding-bottom: 1.5vh;
@@ -1130,17 +1190,20 @@ input {
     display: inline-block;
 }
 
+/* Gaya untuk paragraf dan daftar. */
 .about-div p,
 .about-div li {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     text-align: justify;
 }
 
+/* Gaya untuk daftar fitur. */
 .features-list {
     list-style: none;
     padding-left: 0;
 }
 
+/* Gaya untuk setiap item daftar fitur. */
 .features-list li {
     background-color: var(--bg-secondary);
     padding: 2vh 2vw;
@@ -1149,10 +1212,12 @@ input {
     border-left: 0.5vh solid var(--accent-color);
 }
 
+/* Gaya untuk teks tebal di daftar fitur. */
 .features-list strong {
     color: var(--accent-color);
 }
 
+/* Gaya untuk bagian kreator. */
 .creator-div {
     display: flex;
     align-items: center;
@@ -1162,14 +1227,15 @@ input {
     border-radius: 1.5vw;
 }
 
+/* Gaya untuk gambar kreator. */
 .creator-div img {
-    width: 15vh;
-    height: 15vh;
+    width: 10vw;
     border-radius: 50%;
     object-fit: cover;
     border: 0.3vh solid var(--accent-color);
 }
 
+/* Gaya untuk kutipan kreator. */
 .creator-quote {
     font-style: italic;
     color: var(--text-secondary);
@@ -1178,11 +1244,13 @@ input {
     padding-left: 2vw;
 }
 
+/* Gaya untuk nama kreator. */
 .creator-name {
     font-weight: bold;
     color: var(--text-primary);
 }
 
+/* Gaya untuk kotak sidebar. */
 .about-aside .aside-box {
     background-color: var(--bg-secondary);
     padding: 3vh 3vw;
@@ -1190,6 +1258,7 @@ input {
     margin-bottom: 4vh;
 }
 
+/* Gaya untuk judul h3 di sidebar. */
 .about-aside h3 {
     font-size: 2vw;
     color: var(--accent-color);
@@ -1199,23 +1268,27 @@ input {
     padding-bottom: 1.5vh;
 }
 
+/* Gaya untuk daftar di sidebar. */
 .about-aside ul {
     list-style: none;
     padding: 0;
     color: var(--text-secondary);
 }
 
+/* Gaya untuk setiap item daftar di sidebar. */
 .about-aside ul li {
     margin-bottom: 1.5vh;
     display: flex;
     align-items: center;
 }
 
+/* Gaya untuk teks tebal di item daftar. */
 .about-aside ul li strong {
     color: var(--text-primary);
     min-width: 10vw;
 }
 
+/* Gaya untuk ikon media sosial di sidebar. */
 .aside-socials {
     display: flex;
     gap: 2vw;
@@ -1223,19 +1296,18 @@ input {
     align-items: center;
 }
 
+/* Gaya untuk gambar ikon media sosial. */
 .aside-socials a img {
     width: 3.5vw;
     transition: transform 0.2s ease;
 }
 
+/* Efek saat ikon di-hover. */
 .aside-socials a img:hover {
     transform: scale(1.15);
 }
 
-/* ================================================= */
-/* PROFILE */
-/* ================================================= */
-
+/* Kontainer untuk info profil. */
 .profile-info {
     display: flex;
     flex-direction: column;
@@ -1243,18 +1315,31 @@ input {
     padding: 6vh 0;
 }
 
+/* Gaya untuk judul h1 di dalam info profil. */
+.profile-info h1 {
+    font-size: 3vw;
+}
+
+/* Gaya untuk paragraf di dalam info profil. */
+.profile-info p {
+    font-size: 2vw;
+}
+
+/* Gaya untuk nama pengguna. */
 #profile-username {
     font-size: 4vw;
     font-weight: bold;
     color: var(--accent-color);
 }
 
+/* Gaya untuk handle pengguna. */
 #profile-handle {
     color: var(--text-secondary);
     margin-top: 1vh;
     margin-bottom: 3vh;
 }
 
+/* Kontainer untuk tab profil. */
 .profile-tabs {
     display: flex;
     justify-content: center;
@@ -1263,6 +1348,7 @@ input {
     margin-bottom: 5vh;
 }
 
+/* Gaya untuk tombol tab. */
 .tab-btn {
     background: none;
     border: none;
@@ -1275,14 +1361,17 @@ input {
     transition: color 0.3s;
 }
 
+/* Efek saat tombol tab di-hover. */
 .tab-btn:hover {
     color: var(--text-primary);
 }
 
+/* Gaya untuk tombol tab yang aktif. */
 .tab-btn.active {
     color: var(--accent-color);
 }
 
+/* Pseudo-element untuk garis bawah tab yang aktif. */
 .tab-btn.active::after {
     content: '';
     position: absolute;
@@ -1293,11 +1382,23 @@ input {
     background-color: var(--accent-color);
 }
 
+/* Gaya untuk pesan login. */
 .login-prompt {
     text-align: center;
     padding: 7vh 0;
 }
 
+/* Gaya untuk judul h2 di pesan login. */
+.login-prompt h2 {
+    font-size: 2vw;
+}
+
+/* Gaya untuk paragraf di pesan login. */
+.login-prompt p {
+    font-size: 1vw;
+}
+
+/* Gaya untuk tautan di pesan login. */
 .login-prompt a {
     color: var(--accent-color);
     font-weight: bold;

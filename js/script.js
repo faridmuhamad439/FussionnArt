@@ -7,11 +7,9 @@ if (hamburger && navMenu) { // Memeriksa apakah kedua elemen tersebut ada di hal
         navMenu.classList.toggle("active"); // Mengalihkan (menambahkan/menghapus) kelas CSS "active" pada menu, yang akan menampilkan atau menyembunyikannya.
     });
 }
-
 //LOG OUT
 // Menunggu semua elemen HTML dimuat
 document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setelah halaman HTML selesai dimuat.
-
     // 1. Cari elemen link Log Out berdasarkan ID yang kita buat
     const logoutButton = document.getElementById("logout-button"); // Mengambil elemen tombol logout.
 
@@ -43,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setela
         });
     }
 });
-
 // back
 // Menunggu semua elemen HTML dimuat
 document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setelah halaman HTML selesai dimuat.
@@ -62,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setela
         });
     }
 });
-
 // --- Skrip untuk Memuat Pratinjau Galeri ---
 document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setelah halaman HTML selesai dimuat.
     const showcaseContainer = document.getElementById('image-showcase'); // Mengambil wadah untuk pratinjau gambar.

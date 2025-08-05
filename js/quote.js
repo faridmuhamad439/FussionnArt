@@ -1,7 +1,3 @@
-// ==================================================
-//    QUOTE.JS (TERINTEGRASI DENGAN MODAL & PAGE)
-// ==================================================
-
 document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode di dalam fungsi ini setelah seluruh dokumen HTML selesai dimuat.
 
     // --- Elemen & Variabel Utama ---

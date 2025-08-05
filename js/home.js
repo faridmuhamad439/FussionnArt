@@ -1,6 +1,3 @@
-// home.js (versi yang telah disesuaikan)
-
-// PENTING: GANTI DENGAN PATH VIDEO LOKAL ANDA
 const localVideoPaths = [ // Deklarasi array yang berisi path ke file video lokal.
     "https://files.catbox.moe/mr9dep.mp4",
     "https://files.catbox.moe/1oimch.mp4",

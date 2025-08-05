@@ -1,7 +1,11 @@
 /* ==================================== */
-/*  RESPONSIVE (UNTUK LAYAR KECIL)    */
+/*  RESPONSIVE (UNTUK LAYAR KECIL)    */
 /* ==================================== */
+
+/* Mengubah gaya untuk layar dengan lebar 768px atau kurang. */
 @media (max-width: 768px) {
+
+    /* Mengatur ulang menu navigasi untuk tampilan mobile. */
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -13,29 +17,37 @@
         padding: 2vh 0;
         transition: all 2s;
     }
-    .logo h1{
+
+    /* Mengubah ukuran font judul logo. */
+    .logo h1 {
         font-size: 3vw;
     }
+
+    /* Mengubah gaya menu navigasi saat memiliki kelas "active". */
     .nav-menu.active {
         display: flex;
     }
 
+    /* Mengatur setiap item menu. */
     .nav-menu li {
         width: 100%;
         text-align: center;
     }
 
+    /* Mengubah gaya link di dalam menu. */
     .nav-menu li a {
         display: block;
         padding: 2vh 2vw;
         font-size: 2vw;
     }
 
+    /* Menampilkan tombol hamburger. */
     .hamburger {
         display: block;
         font-size: 4vw;
     }
 
+    /* Mengubah tata letak footer menjadi satu kolom. */
     .foot-contain {
         flex-direction: column;
         align-items: center;
@@ -43,60 +55,90 @@
         gap: 6vh;
     }
 
+    /* Mengatur ikon media sosial di footer. */
     .foot-medsos {
         justify-content: center;
     }
-    input{
-        padding: 0.3vw;
+
+    /* Mengatur gaya input form. */
+    input {
+        padding: 1.5vw;
         font-size: 1vw;
     }
-    label{
+
+    /* Mengatur gaya label form. */
+    label {
+        /* margin: 0; */
         font-size: 1vw;
     }
-    .login{
-        padding: 1vw;
+
+    /* Mengatur gaya tombol login. */
+    .login {
+        padding: 1.5vw;
     }
 }
 
+/* Mengubah gaya untuk layar dengan lebar 768px atau kurang. */
 @media (max-width: 768px) {
+
+    /* Mengatur tata letak galeri anime. */
     .anime-gallery {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
+    /* Mengatur ukuran font untuk h1. */
     h1 {
-        font-size: 2.5rem; /* Ukuran fallback untuk media query */
+        font-size: 2.5rem;
+        /* Ukuran fallback untuk media query */
     }
 
+    /* Mengatur kartu galeri anime. */
     .landscape-card {
-        height: 180px; /* Ukuran fallback untuk media query */
+        height: 180px;
+        /* Ukuran fallback untuk media query */
     }
 
+    /* Mengatur judul di dalam kartu. */
     .card-title {
-        font-size: 1.5rem; /* Ukuran fallback untuk media query */
+        font-size: 1.5rem;
+        /* Ukuran fallback untuk media query */
     }
 }
 
+/* Mengubah gaya untuk layar dengan lebar 480px atau kurang (layar sangat kecil/ponsel). */
 @media (max-width: 480px) {
+
+    /* Mengatur tata letak galeri anime menjadi satu kolom. */
     .anime-gallery {
         grid-template-columns: 1fr;
     }
 
+    /* Mengubah ukuran font h1. */
     h1 {
-        font-size: 2rem; /* Ukuran fallback untuk media query */
+        font-size: 2rem;
+        /* Ukuran fallback untuk media query */
     }
 
+    /* Mengubah tinggi kartu galeri. */
     .landscape-card {
-        height: 160px; /* Ukuran fallback untuk media query */
+        height: 160px;
+        /* Ukuran fallback untuk media query */
     }
 }
 
+/* Mengubah gaya untuk layar dengan lebar 992px atau kurang. */
 @media (max-width: 992px) {
+
+    /* Mengatur tata letak halaman `about` menjadi satu kolom. */
     .page-wrapper-with-aside {
         grid-template-columns: 1fr;
     }
 }
 
+/* Mengubah gaya untuk layar dengan lebar 768px atau kurang. */
 @media (max-width: 768px) {
+
+    /* Mengubah tata letak bagian kreator. */
     .creator-div {
         flex-direction: column;
         text-align: center;

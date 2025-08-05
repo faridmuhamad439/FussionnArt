@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FussionnArt</title>
+    <!-- Favicon -->
     <link rel="icon" href="../assets/finterest logo.jpg">
+
+    <!-- Import file CSS eksternal -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/resposive.css">
+
+     <!-- Import Google Icon -->
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
+<!-- setiap html punya struktur yang sama, cuma beda konten -->
 <body>
+    <!-- Bagian Header -->
     <header class="main-header">
         <div class="head">
             <button class="hamburger" id="hamburger">&#9776;</button>
@@ -19,15 +26,14 @@
                 <img src="../assets/finterest logo.jpg" alt="icon" />
                 <h1>Fussionn<span><i class="art">Art</i></span></h1>
             </a>
+            <!-- Navigasi -->
             <nav class="navbar">
                 <div class="nav-blur-overlay">
                     <ul class="nav-menu" id="navMenu">
                         <li class="hover"><a href="home.html">Home</a></li>
                         <li class="hover"><a class="active" href="explore.html">Explore</a></li>
-                        <!-- <li class="hover"><a href="mesagge.html">Message</a></li> -->
                         <li class="hover"><a href="about.html">About</a></li>
                         <li class="hover"><a href="profile.html">Profile</a></li>
-                        <!-- <li class="hover"><a id="theme-toggle" href="#">Mode</a></li> -->
                         <li class="hover dropdown-menu" id="theme-menu">
                             <a href="#">Mode</a>
                             <ul class="dropdown-content">
@@ -43,7 +49,10 @@
 
         </div>
     </header>
+
+    <!-- Konten utama -->
     <main>
+        <!-- Section explore -->
         <section class="size">
             <span id="back-button" class="material-symbols-outlined">
                 arrow_back
@@ -52,6 +61,7 @@
                 <h1>Explore Anime</h1>
             </div>
 
+            <!-- Search -->
             <div class="search-container">
                 <form id="explore-search-form">
                     <input type="search" id="explore-search-input" placeholder="Cari nama anime..." />
@@ -59,6 +69,7 @@
                 </form>
             </div>
 
+            <!-- Filter Ukuran Gambar-->
             <div id="orientation-filter-buttons" class="filter-button-group">
                 <button class="filter-btn active" data-filter="all">Semua</button>
                 <button class="filter-btn" data-filter="potrait">Potrait</button>
@@ -66,15 +77,18 @@
                 <button class="filter-btn" data-filter="landScape">Landscape</button>
             </div>
 
+            <!-- Tampungan untuk menampilkan gambar per karakter -->
             <div class="character-grid" id="explore-character-grid">
             </div>
 
+            <!-- Pagination -->
             <div id="pagination-container">
                 <button id="prev-button">&lt;</button>
                 <span id="page-info"></span>
                 <button id="next-button">&gt;</button>
             </div>
 
+            <!-- Modal untuk menampilkan gambar -->
             <div id="image-modal" class="modal">
                 <span class="close">X</span>
                 <div class="modal-actions">
@@ -87,6 +101,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="xiaomi-foot">
         <div class="foot-contain">
             <div class="foot">
@@ -112,6 +127,7 @@
                 <p>copyright © 2025 by <strong>Fussionn<i class="art">Art</i></strong></p>
             </div>
     </footer>
+    <!-- JavaScript eksternal -->
     <script src="../js/script.js"></script>
     <script src="../js/explore.js"></script>
     <script src="../js/modal.js"></script>

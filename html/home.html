@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FussionnArt</title>
+
+    <!-- Favicon -->
     <link rel="icon" href="../assets/finterest logo.jpg">
+
+    <!-- Import file CSS eksternal -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/resposive.css">
 </head>
 
+<!-- setiap html punya struktur yang sama, cuma beda konten -->
 <body>
+    <!-- Bagian Header -->
     <header class="main-header">
         <div class="head">
             <button class="hamburger" id="hamburger">&#9776;</button>
@@ -18,15 +24,14 @@
                 <img src="../assets/finterest logo.jpg" alt="icon" />
                 <h1>Fussionn<span><i class="art">Art</i></span></h1>
             </a>
+            <!-- Navigasi -->
             <nav class="navbar">
                 <div class="nav-blur-overlay">
                     <ul class="nav-menu" id="navMenu">
                         <li class="hover"><a class="active" href="home.html">Home</a></li>
                         <li class="hover"><a href="explore.html">Explore</a></li>
-                        <!-- <li class="hover"><a href="mesagge.html">Message</a></li> -->
                         <li class="hover"><a href="about.html">About</a></li>
                         <li class="hover"><a href="profile.html">Profile</a></li>
-                        <!-- <li class="hover"><a id="theme-toggle" href="#">Mode</a></li> -->
                         <li class="hover dropdown-menu" id="theme-menu">
                             <a href="#">Mode</a>
                             <ul class="dropdown-content">
@@ -41,7 +46,9 @@
             </nav>
         </div>
     </header>
+    <!-- Konten utama -->
     <main>
+        <!-- Section: home -->
         <section class="size">
             <div class="video-wrapper">
                 <video id="main-video" controls autoplay muted loop>
@@ -53,13 +60,18 @@
             <div class="explore-header">
                 <h1>Find your Anime</h1>
             </div>
+
+            <!-- Search -->
             <form id="searchBox">
                 <input type="search" id="search-input" placeholder="Cari nama anime...">
                 <button type="submit">Cari</button>
             </form>
+            <!-- Tampungan untuk menampilkan gambar per anime -->
             <div class="anime-gallery" id="anime-gallery"></div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="xiaomi-foot">
         <div class="foot-contain">
             <div class="foot">
@@ -86,6 +98,7 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript eksternal -->
     <script src="../js/script.js"></script>
     <script src="../js/home.js"></script>
     <script src="../js/search.js"></script>

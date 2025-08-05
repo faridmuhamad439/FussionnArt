@@ -1,7 +1,3 @@
-// ===============================================
-//  JAVASCRIPT UNTUK HALAMAN PROFIL
-// ===============================================
-
 // BAGIAN 1: Referensi Elemen & Variabel Global
 const loggedInUser = localStorage.getItem("loggedInUser"); // Mengambil nama pengguna yang sedang login dari local storage.
 let allImageData = []; // Array kosong untuk menyimpan semua data gambar dari API.
