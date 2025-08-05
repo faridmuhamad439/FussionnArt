@@ -170,9 +170,9 @@ body.light-theme .logo h1 {
     transform: translateX(-50%);
     background-color: var(--bg-secondary);
     list-style: none;
-    padding: 10px;
-    border-radius: 8px;
-    min-width: 120px;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    /* min-width: 120px; */
     z-index: 10;
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -181,10 +181,10 @@ body.light-theme .logo h1 {
     display: flex;
 }
 .dropdown-content li a {
-    padding: 8px 12px;
+    padding: 1vw 3vw;
     display: block;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 1vvw;
 }
 .dropdown-content li a:hover {
     background-color: var(--accent-color);
@@ -271,7 +271,7 @@ body.light-theme .logo h1 {
 }
 
 .feature-card h3 {
-    font-size: 2vw;
+    font-size: 3vw;
     margin-bottom: 2vh;
     color: var(--accent-color);
 }
@@ -279,6 +279,7 @@ body.light-theme .logo h1 {
 .feature-card p {
     color: var(--text-secondary);
     line-height: 1.6;
+    font-size: 1vw;
 }
 
 /* Pratinjau Galeri */
@@ -988,6 +989,7 @@ h2 {
     text-align: center;
     margin-bottom: 3vh;
     color: var(--text-primary);
+    font-size: 2vw;
 }
 
 .form-group {
@@ -1058,8 +1060,9 @@ input {
     background-color: var(--bg-secondary);
     backdrop-filter: blur(0.5vw);
     border-radius: 10%;
-    width: 4.5vh;
-    height: 4.5vh;
+    width: 4vw;
+    /* height: ; */
+    font-size: 3vw;
     color: var(--text-secondary);
     cursor: pointer;
     border: 0.1vh solid var(--border-color);

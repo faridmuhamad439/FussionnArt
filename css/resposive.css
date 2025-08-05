@@ -46,6 +46,16 @@
     .foot-medsos {
         justify-content: center;
     }
+    input{
+        padding: 0.3vw;
+        font-size: 1vw;
+    }
+    label{
+        font-size: 1vw;
+    }
+    .login{
+        padding: 1vw;
+    }
 }
 
 @media (max-width: 768px) {

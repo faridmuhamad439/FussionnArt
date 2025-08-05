@@ -56,7 +56,7 @@ function fetchAndProcessImages() { // Fungsi untuk mengambil dan memproses semua
         });
 }
 
-// Fungsi untuk menampilkan gambar berdasarkan daftar URL tanpa menggunakan innerHTML
+// Fungsi untuk menampilkan gambar berdasarkan daftar URL 
 function renderGrid(imageUrlList, emptyMessage) { // Fungsi untuk menampilkan gambar di grid.
     // Cara modern dan direkomendasikan untuk membersihkan semua isi elemen
     grid.replaceChildren(); // Menghapus semua anak elemen dari grid dengan cara modern.
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setela
         // Setelah semua data gambar siap, tampilkan gambar yang disukai
         renderGrid(getLikes(), "Anda belum menyukai gambar apapun."); // Menampilkan gambar yang disukai.
     }).catch(error => { // Menangkap error jika ada masalah saat mengambil data.
-        grid.textContent = `style="color:red;">Gagal memuat data gambar.` // Menampilkan pesan error.
+        grid.textContent = `Gagal memuat data gambar.` // Menampilkan pesan error.
     });
 
     // 3. Tambahkan event listener untuk tab
