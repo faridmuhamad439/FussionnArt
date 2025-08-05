@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FussionnArt</title>
+  <link rel="icon" href="/assets/finterest logo.jpg">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="head">
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <a href="home.html" class="logo">
+        <img src="/assets/finterest logo.jpg" alt="icon" />
+        <h1>Fussionn<span><i class="art">Art</i></span></h1>
+      </a>
+      <nav class="navbar">
+        <div class="nav-blur-overlay">
+          <ul class="nav-menu" id="navMenu">
+            <li class="hover"><a class="active" href="home.html">Home</a></li>
+            <li class="hover"><a href="explore.html">Explore</a></li>
+            <!-- <li class="hover"><a href="mesagge.html">Message</a></li> -->
+            <li class="hover"><a href="about.html">About</a></li>
+            <li class="hover"><a href="profile.html">Profile</a></li>
+            <!-- <li class="hover"><a id="theme-toggle" href="#">Mode</a></li> -->
+            <li class="hover dropdown-menu" id="theme-menu">
+              <a href="#" data-key="nav-mode">Mode</a>
+              <ul class="dropdown-content">
+                <li><a href="#" class="theme-switch" data-theme="light">Light</a></li>
+                <li><a href="#" class="theme-switch" data-theme="dark">Dark</a>
+                </li>
+              </ul>
+            </li>
+            <li class="logout"><a id="logout-button" href="/index.html">Log out</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="size">
+      <div class="character-header">
+        <h1 id="anime-title">Memuat Galeri...</h1>
+
+        <div id="character-filter-buttons" class="filter-button-group"></div>
+
+        <a href="home.html" class="back-button">
+          <p class="fas fa-arrow-left"></p> Kembali ke Daftar Anime
+        </a>
+      </div>
+      <div class="character-grid" id="character-grid">
+      </div>
+      <div id="pagination-container">
+        <button id="prev-button">&lt;</button>
+        <span id="page-info"></span>
+        <button id="next-button">&gt;</button>
+      </div>
+
+      <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-actions">
+          <span id="modal-like-btn" class="button">🤍 Like</span>
+          <span id="modal-favorite-btn" class="button">⭐ Favorite</span>
+          <span id="modal-download-btn" class="button">Download</span>
+        </div>
+        <img class="modal-content" id="modal-image">
+      </div>
+    </section>
+  </main>
+  <footer class="xiaomi-foot">
+    <div class="foot-contain">
+      <div class="foot">
+        <h2>Fussionn<i class="art">Art</i></h2>
+        <p>
+          Portal terbaik bagi para penggemar anime!<br>
+          Temukan berbagai gambar anime keren, estetik, dan berkualitas tinggi dari berbagai judul favoritmu.
+        </p>
+      </div>
+      <div class="foot">
+        <h3 class="med">Follow Us</h3>
+        <div id="sos" class="foot-medsos">
+          <a href="https://www.instagram.com/faridmuhamad439/" target="_blank"><img src="/assets/ig-medsos.png"
+              alt="Instagram" /></a>
+          <a href="https://www.youtube.com/@muhamadfarid8494" target="_blank"><img src="/assets/yt-medsos.png"
+              alt="Youtube" /></a>
+          <a href="https://www.tiktok.com/@fm.0610" target="_blank"><img src="/assets/tiktok-medsos.png"
+              alt="Tiktok" /></a>
+        </div>
+      </div>
+      <div class="foot">
+        <h3>About Us</h3>
+        <p>copyright © 2025 by <strong>Fussionn<i class="art">Art</i></strong></p>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
+  <script src="/js/quote.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/page.js"></script>
+
+</body>
+
+</html>

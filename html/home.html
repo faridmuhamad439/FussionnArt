@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FussionnArt</title>
+    <link rel="icon" href="/assets/finterest logo.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="head">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <a href="home.html" class="logo">
+                <img src="/assets/finterest logo.jpg" alt="icon" />
+                <h1>Fussionn<span><i class="art">Art</i></span></h1>
+            </a>
+            <nav class="navbar">
+                <div class="nav-blur-overlay">
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="hover"><a class="active" href="home.html">Home</a></li>
+                        <li class="hover"><a href="explore.html">Explore</a></li>
+                        <!-- <li class="hover"><a href="mesagge.html">Message</a></li> -->
+                        <li class="hover"><a href="about.html">About</a></li>
+                        <li class="hover"><a href="profile.html">Profile</a></li>
+                        <!-- <li class="hover"><a id="theme-toggle" href="#">Mode</a></li> -->
+                        <li class="hover dropdown-menu" id="theme-menu">
+                            <a href="#">Mode</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#" class="theme-switch" data-theme="light">Light</a></li>
+                                <li><a href="#" class="theme-switch" data-theme="dark">Dark</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="logout"><a id="logout-button" href="/index.html">Log out</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="size">
+            <div class="video-wrapper">
+                <video id="main-video" controls autoplay muted loop>
+                    Maaf, browser Anda tidak mendukung tag video.
+                </video>
+                <button id="prev-video-btn" class="nav-btn">&lt;</button>
+                <button id="next-video-btn" class="nav-btn">&gt;</button>
+            </div>
+            <div class="explore-header">
+                <h1>Find your Anime</h1>
+            </div>
+            <form id="searchBox">
+                <input type="search" id="search-input" placeholder="Cari nama anime...">
+                <button type="submit">Cari</button>
+            </form>
+            <div class="anime-gallery" id="anime-gallery"></div>
+        </section>
+    </main>
+    <footer class="xiaomi-foot">
+        <div class="foot-contain">
+            <div class="foot">
+                <h2>Fussionn<i class="art">Art</i></h2>
+                <p>
+                    Portal terbaik bagi para penggemar anime!<br>
+                    Temukan berbagai gambar anime keren, estetik, dan berkualitas tinggi dari berbagai judul favoritmu.
+                </p>
+            </div>
+            <div class="foot">
+                <h3 class="med">Follow Us</h3>
+                <div id="sos" class="foot-medsos">
+                    <a href="https://www.instagram.com/faridmuhamad439/" target="_blank"><img src="/assets/ig-medsos.png"
+                            alt="Instagram" /></a>
+                    <a href="https://www.youtube.com/@muhamadfarid8494" target="_blank"><img src="/assets/yt-medsos.png"
+                            alt="Youtube" /></a>
+                    <a href="https://www.tiktok.com/@fm.0610" target="_blank"><img src="/assets/tiktok-medsos.png"
+                            alt="Tiktok" /></a>
+                </div>
+            </div>
+            <div class="foot">
+                <h3>About Us</h3>
+                <p>copyright © 2025 by <strong>Fussionn<i class="art">Art</i></strong></p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/search.js"></script>
+</body>
+
+</html>

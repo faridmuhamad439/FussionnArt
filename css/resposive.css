@@ -1,0 +1,95 @@
+/* ==================================== */
+/* 6. RESPONSIVE (UNTUK LAYAR KECIL)    */
+/* ==================================== */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-mobile-nav);
+        padding: 1rem 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .foot-contain {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .foot-medsos {
+        justify-content: center;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .anime-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .landscape-card {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .anime-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .landscape-card {
+        height: 160px;
+    }
+}
+
+/* --- Aturan Responsive untuk Layar Kecil --- */
+@media (max-width: 992px) {
+    .page-wrapper-with-aside {
+        grid-template-columns: 1fr;
+        /* Ubah layout menjadi 1 kolom */
+    }
+}
+
+@media (max-width: 768px) {
+    .creator-section {
+        flex-direction: column;
+        /* Tumpuk gambar dan info secara vertikal */
+        text-align: center;
+    }
+}
