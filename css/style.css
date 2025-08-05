@@ -904,6 +904,7 @@ h2 {
 /* Gaya untuk info halaman. */
 #page-info {
     font-weight: 600;
+    font-size: 2vw;
     color: var(--text-secondary);
 }
 
