@@ -97,8 +97,8 @@ a {
 }
 
 .logo img {
-    width: 4vh;
-    height: 4vh;
+    width: 4vw;
+    /* height: 5vh; */
     border-radius: 50%;
     margin-right: 2vw;
 }
@@ -1299,99 +1299,4 @@ input {
     color: var(--accent-color);
     font-weight: bold;
     text-decoration: underline;
-}
-
-/* ==================================== */
-/* 6. RESPONSIVE (UNTUK LAYAR KECIL)    */
-/* ==================================== */
-/* CATATAN: Media queries di bawah ini menggunakan 'px' karena merupakan cara standar 
-   dan fungsional untuk menerapkan desain responsif. Mengubahnya ke 'vw' atau 'vh' 
-   akan membuat perilakunya tidak dapat diprediksi dan kemungkinan besar tidak berfungsi. */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 30%;
-        background-color: var(--bg-header);
-        padding: 2vh 0;
-        transition: all 2s;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-menu li a {
-        display: block;
-        padding: 2vh 2vw;
-        font-size: 2vw;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .foot-contain {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 6vh;
-    }
-
-    .foot-medsos {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .anime-gallery {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-
-    h1 {
-        font-size: 2.5rem; /* Ukuran fallback untuk media query */
-    }
-
-    .landscape-card {
-        height: 180px; /* Ukuran fallback untuk media query */
-    }
-
-    .card-title {
-        font-size: 1.5rem; /* Ukuran fallback untuk media query */
-    }
-}
-
-@media (max-width: 480px) {
-    .anime-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 2rem; /* Ukuran fallback untuk media query */
-    }
-
-    .landscape-card {
-        height: 160px; /* Ukuran fallback untuk media query */
-    }
-}
-
-@media (max-width: 992px) {
-    .page-wrapper-with-aside {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .creator-div {
-        flex-direction: column;
-        text-align: center;
-    }
 }

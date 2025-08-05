@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setela
                 alert("Anda telah berhasil log out."); // Menampilkan pesan bahwa logout berhasil.
 
                 // 9. Arahkan pengguna ke halaman index.html
-                window.location.href = "/index.html"; // Mengarahkan pengguna kembali ke halaman utama.
+                window.location.href = "../index.html"; // Mengarahkan pengguna kembali ke halaman utama.
             }
             // Jika pengguna mengklik "Cancel", tidak terjadi apa-apa
         });

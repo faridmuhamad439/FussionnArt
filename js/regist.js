@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () { // Menjalankan semua
                 alert("Login berhasil!"); // Tampilkan pesan sukses.
                 localStorage.setItem("loggedInUser", username); // Menyimpan username sebagai pengguna yang sedang login.
                 // Arahkan ke halaman utama setelah berhasil login
-                window.location.href = "/html/home.html"; // Mengarahkan pengguna ke halaman utama.
+                window.location.href = "../html/home.html"; // Mengarahkan pengguna ke halaman utama.
             }
         }
     });

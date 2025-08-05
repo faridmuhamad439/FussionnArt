@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => { // Menjalankan kode setela
     }
 
     // --- Event Listeners untuk Tombol di Dalam Modal ---
-
     closeBtn.onclick = () => { modal.style.display = "none"; }; // Mengatur event saat tombol 'tutup' diklik.
     window.addEventListener('click', (e) => { if (e.target == modal) modal.style.display = "none"; }); // Menutup modal jika area di luar modal diklik.
 
